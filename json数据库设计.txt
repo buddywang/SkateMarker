@@ -1,0 +1,36 @@
+
+主页：
+coordinates:
+{
+_id(c_id),
+_openid,
+	check,//审核状态
+	latitude,
+	longitude,
+	marker_position_name, // 地址简称
+	
+}
+
+markers：{
+c_id,
+_openid
+	marker_position,  // 详细地址
+	marker_position_description, 
+	marker_type, 
+	marker_warn, 
+	fileIDList, //上传的图片id列表
+        img_num//图片计数
+}
+
+user:{
+_id
+_openid
+	like:[
+		{
+			c_id,
+			latitude,
+			longitude,
+			marker_position_name,
+		}
+	]
+}

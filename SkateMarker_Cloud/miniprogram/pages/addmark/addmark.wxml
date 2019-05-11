@@ -1,0 +1,54 @@
+<wux-toast id="wux-toast" />
+
+<form bindsubmit="handleSubmit">
+	<view class="cu-form-group">
+		<view class="title">位置名</view>
+		<input name="marker_position_name" placeholder="请选择位置" value="{{ marker_position_name }}"></input>
+		<button class="cu-btn line-grey shadow" bindtap='chooseL'>选择位置</button>
+	</view>
+  <view class="cu-form-group">
+		<view class="title">详细地址</view>
+		<input name="marker_position" placeholder="请选择位置" value="{{ marker_position }}"></input>
+	</view>
+  <view class="cu-form-group">
+		<view class="title">地点分类</view>
+    <view style='position:absolute;left:180rpx;'>
+      <view class="cu-tag round bg-{{active_shop}}" bindtap='clickTag' data-id='0'>板店</view>
+      <view class="cu-tag round bg-{{active_park}}" bindtap='clickTag' data-id='1'>板场</view>
+      <view class="cu-tag round bg-{{active_spot}}" bindtap='clickTag' data-id='2'>spot</view>
+    </view>
+		<!-- <input name="marker_type" placeholder="板店/板场/道具/广场/街头等" value="{{ marker_type }}"></input> -->
+	</view>
+  <view class="cu-form-group">
+		<view class="title">位置描述</view>
+		<input name="marker_position_description" placeholder="具体位置/标记物等" value="{{ marker_position_description }}"></input>
+	</view>
+  <view class="cu-form-group">
+		<view class="title">注意事项</view>
+		<input name="marker_warn" placeholder="保安巡查/晒/交通不便/吃住贵" value="{{ marker_warn }}"></input>
+	</view>
+  <view class="cu-bar bg-white margin-top">
+		<view class="action">
+			图片上传
+		</view>
+		<view class="action">
+			{{imgList.length}}/4
+		</view>
+	</view>
+	<view class="cu-form-group">
+		<view class="grid col-4 grid-square flex-sub">
+			<view class="bg-img" wx:for="{{imgList}}" wx:key="{{index}}" bindtap="ViewImage" data-url="{{imgList[index]}}">
+				<image src='{{imgList[index]}}' mode='aspectFill'></image>
+				<view class="cu-tag bg-red" catchtap="DelImg" data-index="{{index}}">
+					<text class="cuIcon-close"></text>
+				</view>
+			</view>
+			<view class="solids" bindtap="ChooseImage" wx:if="{{imgList.length<4}}">
+				<text class="cuIcon-cameraadd"></text>
+			</view>
+		</view>
+	</view>
+  <view class="padding flex flex-direction">
+    <button form-type="submit" class='cu-btn line-mauve shadow lg padding'>{{tag}}标记</button>
+  </view>
+</form>

@@ -1,0 +1,30 @@
+/* pages/index2/index2.wxss */
+.locate {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 40px;
+  height: 40px;
+}
+.add {
+  position: fixed;
+  right: 30px;
+  bottom: 80px;
+  width: 40px;
+  height: 40px;
+}
+.search {
+  position: fixed;
+  right: 30px;
+  bottom: 130px;
+  width: 40px;
+  height: 40px;
+}
+.user {
+  position: fixed;
+  right: 30px;
+  bottom: 180px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}

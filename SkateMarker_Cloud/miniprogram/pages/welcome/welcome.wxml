@@ -1,0 +1,12 @@
+<wux-dialog id="wux-dialog" />
+
+<image src='/static/bgimg.png' class='bgimg' style='height:{{wdheg}}px;' mode='scaleToFill'></image>
+<view class='wel' style='height:{{wdheg}}px;'>
+  <view>
+    <button 
+    class="cu-btn line-mauve shadow lg" 
+    outline 
+    open-type="getUserInfo" 
+    bindgetuserinfo='getUserMsg'>开始SkateMarker</button>
+  </view>
+</view>

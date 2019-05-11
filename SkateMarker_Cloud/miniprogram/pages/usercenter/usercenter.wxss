@@ -1,0 +1,7 @@
+/* pages/usercenter/usercenter.wxss */
+.icon{
+  font-size: 20px;
+  margin-left: 10px;
+}
+.cu-item{
+}

@@ -1,0 +1,40 @@
+<view>
+  <map
+    show-location
+    enable-3D 
+    enable-overlooking 
+    enable-rotate
+    longitude="{{longitude}}"
+    latitude="{{latitude}}"
+    scale="15"
+    subkey="44ZBZ-3EFCQ-DT25M-GRXJD-O7XBF-QVFCR"
+    markers="{{markers}}"
+    bindmarkertap="markertap"
+    style="width: 100%; height:{{wdheg}}px;"
+  ></map>
+  <cover-image
+    class='add'
+    src='/static/add.png'
+    bindtap='handleclick'
+  >
+  </cover-image>
+  <cover-image
+    class='search'
+    src='/static/search.png'
+    bindtap='searchLoc'
+  >
+  </cover-image>
+  <cover-image
+    class='user'
+    src='{{avatarurl}}'
+    bindtap='goUserCenter'
+  >
+  </cover-image>
+  <cover-image
+    class='locate'
+    src='/static/locate.png'
+    bindtap='backLocate'
+  >
+  </cover-image>
+</view>
+

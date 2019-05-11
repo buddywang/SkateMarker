@@ -1,0 +1,14 @@
+.like{
+  position: fixed;
+  right: 20rpx;
+  top: 20rpx;
+  width: 30px;
+  height: 30px;
+}
+.gaide{
+  position: fixed;
+  right: 20rpx;
+  top: 85rpx;
+  width: 30px;
+  height: 30px;
+}

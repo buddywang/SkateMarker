@@ -1,0 +1,13 @@
+.wel{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content:center; 
+  align-items:center;
+  z-index: 2;
+}
+.bgimg{
+  width: 100%;
+  position: fixed;
+}
